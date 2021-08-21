@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "padrao";
+    src: url(../fonts/PoiretOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "secundaria";
+    src: url(../fonts/Righteous-Regular.ttf);
+}
+
+h1 {
+    font-family: "secundaria";
+}
+
+p {
+    font-family: "padrao";
+    font-size: 120%;
+}
+
+.azul {
+    color: blue;
+}
+
+.vermelho {
+    color: red;
+}

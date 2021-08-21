@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "titulo";
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: "paragrafo";
+    src: url(../fonts/Urbanist-Regular.ttf);
+}
+
+h1 {
+    text-align: center;
+    font-family: "titulo";
+    font-size: 300%;
+    color: #663399;
+}
+
+img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+p {
+    font-family: "paragrafo";
+    text-indent: 30px;
+}
