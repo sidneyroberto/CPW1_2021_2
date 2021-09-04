@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "slogan";
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: "titulo";
+    src: url(../fonts/Urbanist-Black.ttf);
+}
+
+@font-face {
+    font-family: "padrao";
+    src: url(../fonts/Urbanist-VariableFont_wght.ttf);
+}

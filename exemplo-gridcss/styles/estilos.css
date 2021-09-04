@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+
+#area1 {
+    grid-area: cabecalho;
+}
+
+#area2 {
+    grid-area: menu;
+}
+
+#area3 {
+    grid-area: conteudo;
+}
+
+#area4 {
+    grid-area: rodape;
+}
+
+#conteiner {
+    display: grid;
+    grid-template-areas:
+        "cabecalho cabecalho cabecalho cabecalho cabecalho"
+        "menu conteudo conteudo conteudo conteudo"
+        "rodape rodape rodape rodape rodape";
+    grid-auto-columns: 1fr;
+}
+
+#area1 {
+    padding: 30px 0px 10px 0px;
+    text-align: center;
+    background-color: #663399;
+}
+
+#area1 h1 {
+    color: white;
+    font-family: "slogan";
+    font-size: 350%;
+    text-shadow: 5px 5px #333;
+}
+
+#area2 {
+    background-color: #736598;
+    padding: 20px;
+}
+
+#area2 span {
+    color: white;
+    font-family: "titulo";
+    font-size: 200%;
+    text-shadow: 3px 3px #333;
+}
+
+#area2 ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#area2 a {
+    text-decoration: none;
+    color: white;
+    font-family: "titulo";
+    font-size: 150%;
+    text-shadow: 2px 2px #333;
+}
+
+#area2 a:hover {
+    color: #d5b8ff;
+}
+
+#area3 {
+    padding: 20px;
+}
+
+#area3 h2 {
+    font-family: "titulo";
+    font-size: 250%;
+}
+
+#area3 p {
+    font-family: "padrao";
+    font-size: 120%;
+}
+
+#area4 {
+    background-color: black;
+    padding: 50px 20px;
+}
+
+#area4 span {
+    color: white;
+    font-family: "titulo";
+}
