@@ -1,21 +1,40 @@
+:root {
+    --cor-header: #663399;
+    --cor-menu: #736598;
+    --cor-rodape: black;
+}
+
 body {
     margin: 0;
 }
 
 #area1 {
     grid-area: cabecalho;
+    padding: 30px 0px 10px 0px;
+    text-align: center;
+    background-color: var(--cor-header);
 }
 
 #area2 {
+    grid-area: menu;
+    background-color: var(--cor-menu);
+    padding: 20px;
+}
+
+#areaMobile {
+    display: none;
     grid-area: menu;
 }
 
 #area3 {
     grid-area: conteudo;
+    padding: 20px;
 }
 
 #area4 {
     grid-area: rodape;
+    background-color: var(--cor-rodape);
+    padding: 50px 20px;
 }
 
 #conteiner {
@@ -27,22 +46,11 @@ body {
     grid-auto-columns: 1fr;
 }
 
-#area1 {
-    padding: 30px 0px 10px 0px;
-    text-align: center;
-    background-color: #663399;
-}
-
 #area1 h1 {
     color: white;
     font-family: "slogan";
     font-size: 350%;
     text-shadow: 5px 5px #333;
-}
-
-#area2 {
-    background-color: #736598;
-    padding: 20px;
 }
 
 #area2 span {
@@ -69,9 +77,6 @@ body {
     color: #d5b8ff;
 }
 
-#area3 {
-    padding: 20px;
-}
 
 #area3 h2 {
     font-family: "titulo";
@@ -83,12 +88,62 @@ body {
     font-size: 120%;
 }
 
-#area4 {
-    background-color: black;
-    padding: 50px 20px;
-}
-
 #area4 span {
     color: white;
     font-family: "titulo";
+}
+
+@media only screen and (max-width: 600px) {
+    #conteiner {
+        grid-template-areas:
+            "cabecalho"
+            "menu"
+            "conteudo"
+            "rodape";
+    }
+
+    #area1 {
+        padding: 0;
+    }
+
+    #area1 h1 {
+        margin: 0;
+    }
+
+    #area2 {
+        display: none;
+    }
+
+    #areaMobile {
+        display: block;
+        background-color: var(--cor-header);
+    }
+
+    #areaMobile ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    #areaMobile li {
+        display: inline;
+        margin: 10px;
+    }
+
+    #areaMobile img {
+        filter: invert(100%);
+    }
+
+    #area3 {
+        text-align: center;
+    }
+
+    #area4 {
+        text-align: center;
+    }
+
+    #area4 span {
+        font-size: 130%;
+    }
+
 }
