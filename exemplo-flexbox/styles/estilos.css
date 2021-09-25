@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+#cabecalho {
+    text-align: center;
+    background-color: #5c97bf;
+    padding: 30px 0px 10px 0px;
+}
+
+#cabecalho h1 {
+    font-family: "padrao";
+    color: white;
+    font-size: 400%;
+    text-shadow: 3px 3px #555;
+}
+
+#galeria {
+    display: flex;
+    padding: 20px;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.foto {
+    flex: 33%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.foto img {
+    width: 80%;
+}
+
+@media (max-width: 600px) {
+
+    #galeria {
+        flex-direction: column;
+    }
+
+    .foto img {
+        width: 100%;
+    }
+}
