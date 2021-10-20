@@ -1,0 +1,39 @@
+@keyframes deslizarParaDireita1 {
+    from {
+        left: -1000px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes deslizarParaEsquerda1 {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: -1000px;
+    }
+}
+
+@keyframes deslizarParaDireita2 {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 1000px;
+    }
+}
+
+@keyframes deslizarParaEsquerda2 {
+    from {
+        left: 1000px;
+    }
+
+    to {
+        left: 0px;
+    }
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "header";
+    src: url(../fonts/IMFellEnglishSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: "titulo";
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: "padrao";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "italico";
+    src: url(../fonts/Montserrat-Italic.ttf);
+}

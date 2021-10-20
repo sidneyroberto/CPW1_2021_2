@@ -1,0 +1,190 @@
+:root {
+    --imagem-hero: url(../img/pantanal.jpg);
+}
+
+body {
+    margin: 0;
+}
+
+#menu {
+    background-color: #2e3131;
+    padding: 20px;
+    font-family: "header";
+    display: flex;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #c5eff7;
+}
+
+#menu * {
+    vertical-align: middle;
+}
+
+#titulo {
+    font-size: 200%;
+}
+
+#menuDesktop {
+    list-style: none;
+    font-size: 150%;
+    margin: 0 0 0 auto;
+}
+
+#menuDesktop li {
+    display: inline;
+    margin-left: 30px;
+}
+
+#menuResponsivo {
+    display: none;
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--imagem-hero);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#textoHero {
+    text-align: center;
+    color: white;
+    font-family: "header";
+    text-shadow: 2px 2px black;
+    border: 5px solid white;
+    box-shadow: 2px 2px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+}
+
+#tituloHero {
+    font-size: 500%;
+    margin: 0;
+}
+
+#subtituloHero {
+    font-size: 200%;
+    margin: 0;
+}
+
+#container {
+    padding: 20px;
+}
+
+#slogan {
+    font-family: "titulo";
+    text-align: center;
+    font-size: 300%;
+}
+
+.animal {
+    display: flex;
+    background-color: rgba(200, 247, 197, 0.7);
+    padding: 30px 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.animal:hover {
+    opacity: 1;
+}
+
+.animal:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.animal:nth-child(even) .descricao {
+    padding-left: 25px;
+}
+
+.animal:nth-child(even) .descricao h1,
+.animal:nth-child(even) .fonte {
+    text-align: left;
+}
+
+.fotoAnimal {
+    position: relative;
+    width: 40%;
+    text-align: center;
+    left: -1000px;
+    animation: deslizarParaEsquerda1 1s;
+    animation-timing-function: ease-out;
+    transition: transform 1s;
+}
+
+.animal:hover .fotoAnimal {
+    animation: deslizarParaDireita1 1s;
+    animation-timing-function: ease-out;
+    left: 0;
+}
+
+.animal:nth-child(even) .fotoAnimal {
+    left: 1000px;
+    animation: deslizarParaDireita2 1s;
+}
+
+.animal:nth-child(even):hover .fotoAnimal {
+    left: 0px;
+    animation: deslizarParaEsquerda2 1s;
+}
+
+.fotoAnimal img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.descricao {
+    position: relative;
+    width: 60%;
+    animation: deslizarParaDireita2 1s;
+    animation-timing-function: ease-out;
+    transition: transform 1s;
+}
+
+.animal:nth-child(even) .descricao {
+    animation: deslizarParaEsquerda1 1s;
+    left: -1000px;
+}
+
+.animal:nth-child(even):hover .descricao {
+    animation: deslizarParaDireita1 1s;
+    left: 0px;
+}
+
+.animal:hover .descricao {
+    animation: deslizarParaEsquerda2 1s;
+    animation-timing-function: ease-out;
+}
+
+.descricao * {
+    width: 95%;
+}
+
+.descricao h1 {
+    font-family: "titulo";
+    text-align: right;
+}
+
+.textoDescricao {
+    font-family: "padrao";
+    text-align: justify;
+    font-size: 120%;
+}
+
+.fonte {
+    font-family: "italico";
+    text-align: right;
+}
